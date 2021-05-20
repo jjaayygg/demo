@@ -28,5 +28,5 @@ app.use('/download',require('./Routes/download'))
 
 
 
-port = 300;
+port =  process.env.PORT || 300;
 app.listen(port,()=>{console.log(`listening on ${port}`)})
